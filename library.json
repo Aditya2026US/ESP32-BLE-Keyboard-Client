@@ -1,0 +1,57 @@
+{
+  "name": "ESP32-BLE-Keyboard-Client",
+  "version": "1.0.0",
+  "description": "A lightweight BLE HID Client library for ESP32 to connect Bluetooth Low Energy keyboards and keypads using NimBLE.",
+  "keywords": [
+    "esp32",
+    "bluetooth",
+    "ble",
+    "keyboard",
+    "hid",
+    "client",
+    "host"
+  ],
+  "authors": [
+    {
+      "name": "Aditya2026US",
+      "url": "https://github.com/Aditya2026US"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aditya2026US/ESP32-BLE-Keyboard-Client.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "h2zero/NimBLE-Arduino": "^2.3.2"
+  },
+  "frameworks": [
+    "arduino"
+  ],
+  "platforms": [
+    "espressif32"
+  ],
+  "examples": [
+    {
+      "name": "BasicKeyboard",
+      "base": "examples/BasicKeyboard",
+      "files": [
+        "BasicKeyboard.ino"
+      ]
+    },
+    {
+      "name": "KeyboardInputTest",
+      "base": "examples/KeyboardInputTest",
+      "files": [
+        "KeyboardInputTest.ino"
+      ]
+    },
+    {
+      "name": "DeviceSelector",
+      "base": "examples/DeviceSelector",
+      "files": [
+        "DeviceSelector.ino"
+      ]
+    }
+  ]
+}
