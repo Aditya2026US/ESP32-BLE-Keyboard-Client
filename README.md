@@ -35,19 +35,27 @@ This library is compatible with any ESP32 board that supports Bluetooth Low Ener
 ## Installation
 
 ### PlatformIO
-Add the library repository to your project's `platformio.ini`:
+Add the library to your `platformio.ini` using either the official registry name or the GitHub URL:
 
 ```ini
 lib_deps =
-    https://github.com/Aditya2026US/ESP32-BLE-Keyboard-Client.git
+    aditya-iot/ESP32-BLE-Keyboard-Client
+    # Or directly from GitHub:
+    # https://github.com/Aditya2026US/ESP32-BLE-Keyboard-Client.git
 ```
 
 > **Note:** The dependency on `h2zero/NimBLE-Arduino` is declared in `library.json` and will be installed automatically by PlatformIO.
 
 ### Arduino IDE
-1. Download this repository as a `.zip` file (**Code** -> **Download ZIP** on GitHub).
-2. In Arduino IDE, go to **Sketch** -> **Include Library** -> **Add .ZIP Library...** and select the downloaded file.
-3. Install **NimBLE-Arduino** (version 2.x or later):
+1. **Via Library Manager (Recommended):**
+   - Go to **Tools** -> **Manage Libraries...**
+   - Search for `ESP32-BLE-Keyboard-Client` and click **Install**
+   
+   *Or via ZIP:*
+   - Download this repository as a `.zip` file (**Code** -> **Download ZIP** on GitHub).
+   - In Arduino IDE, go to **Sketch** -> **Include Library** -> **Add .ZIP Library...** and select the downloaded file.
+
+2. Install **NimBLE-Arduino** (version 2.x or later):
    - Go to **Tools** -> **Manage Libraries...**
    - Search for `NimBLE-Arduino` by `h2zero`
    - Click **Install**
